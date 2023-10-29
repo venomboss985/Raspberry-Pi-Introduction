@@ -1,0 +1,47 @@
+# Things to go over
+
+- [ ] Prerequisite hardware
+  - [ ] Pi 4 or 5
+    - [ ] 15W USB-C power adapter
+    - [ ] Ethernet cable (if doing headless setup without Wifi)
+    - [ ] Monitor
+    - [ ] Mouse
+    - [ ] Keyboard
+  - [ ] Zero W/2W
+    - [ ] Micro-B to USB-A cable (or uB to C)
+  - [ ] MicroSD card (>32GB)
+  - [ ] MicroSD card reader (or full size with adapter)
+- [ ] Prerequisite software
+  - [ ] Raspberry Pi Imager
+- [ ] Prerequisite knowledge
+  - [ ] Basic computer knowledge (ie. general computer use)
+- [ ] OS setup
+  - [ ] Install pi imager
+  - [ ] Choose OS to flash
+  - [ ] Edit config in lower right settings menu
+  - [ ] Insert uSD card and power on
+  - [ ] GUI setup
+    - [ ] Plug in monitor, keyboard, and mouse
+    - [ ] Go through first boot instructions on screen (if there are any)
+  - [ ] Headless setup
+    - [ ] ssh into pi with set user and hostname (make sure hostnames are not conflicting)
+  - [ ] sudo apt update, upgrade, autoremove
+  - [ ] Reboot the system
+- [ ] Introduction to Linux
+  - [ ] PiOS (hardware specific distro)
+    - [ ] Similar to Windows
+    - [ ] Show off some preinstalled apps?
+  - [ ] Terminal
+    - [ ] help and man
+    - [ ] sudo
+    - [ ] "everything is a file" and filesystem paths (absolute and relative)
+    - [ ] Navigational commands
+      - [ ] pwd and whoami
+      - [ ] ls and cd
+      - [ ] mv and cp (-r)
+      - [ ] touch and rm
+      - [ ] mkdir and rmdir
+    - [ ] Basic nano usage with Python Hello World!
+    - [ ] shutdown now and reboot
+  - [ ] raspi-config
+- [ ] "How to ... raspberry pi"

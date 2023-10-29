@@ -1,0 +1,26 @@
+# Things to go over
+
+- [ ] Python cont.
+  - [ ] Other data structures
+    - [ ] Lists and functions
+    - [ ] Dicts and functions
+    - [ ] Tuples
+    - [ ] Sets
+  - [ ] Exception handling
+  - [ ] File IO
+    - [ ] Open and close files (long way)
+    - [ ] Easy method file open management
+    - [ ] File permissions
+  - [ ] Modules
+    - [ ] Default modules (example with math, random, or time)
+    - [ ] Creating your own modules
+  - [ ] Libraries (maybe for GPIO module?)
+    - [ ] Pip (use Pygame?)
+      - [ ] Installing and updating libraries
+      - [ ] Removing libraries
+      - [ ] Listing installed libraries
+      - [ ] Freezing
+  - [ ] OOP? (maybe)
+    - [ ] Classes
+    - [ ] \__init\__()
+    - [ ] super()
