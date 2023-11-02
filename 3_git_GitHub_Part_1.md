@@ -27,4 +27,3 @@
 - [ ] Other features
   - [ ] `.gitignore`
   - [ ] Licenses
-  - [ ] VS Code integration? (doesnt do a whole lot, more exploration needed)
