@@ -13,8 +13,10 @@
     - [ ] Add your user to the docker group with `sudo usermod -aG docker $USER` (-aG is add group, $USER is the currently signed in user, echo $USER)
   - [ ] Test install with hello world container
 - [ ] Run through container of participants' choice
-  - [ ] Open media vault/nextcloud
-  - [ ] plex/jellyfin
-  - [ ] Minecraft server (pterodactyl?)
-  - [ ] Shell in a box/guacamole
-  - [ ] VPN/Pi-hole
+  - [ ] Portainer
+  - [ ] Flame
+  - [ ] Open media vault/nextcloudpi
+  - [ ] Plex/jellyfin
+  - [ ] Game server (Pterodactyl/docker-minecraft-server)
+  - [ ] Guacamole
+  - [ ] OpenVPN/Pi-hole
