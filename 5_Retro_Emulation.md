@@ -6,5 +6,4 @@
 - [ ] Setting up cores/Retroarch
 - [ ] Using scraper for box art
 - [ ] Sign into Retro Achievements
-- [ ] Using Kodi?
-- [ ] Light overclock (1800 cpu, 550-600 gpu)
+- [ ] Light overclock (arm_freq=1800-2000, gpu_freq=550-600, over_voltage=4; might not need over_voltage parameter)
