@@ -1,0 +1,28 @@
+# Things to go over
+
+- [ ] Install VS Code (apt install code-oss)
+- [ ] Create new folder (as a Python workspace)
+- [ ] cd into the folder and `nano hello_world.py`
+- [ ] Write `print("Hello World!")`, hit CTRL+O, Enter, and CTRL+X to exit
+- [ ] To go over:
+  - [ ] Variables and data types
+    - [ ] naming conventions (including snake_case)
+    - [ ] int, float, bool, string, etc.
+      - [ ] "10" != 10 (show addition example)
+  - [ ] Basic math operations
+    - [ ] +-*/%
+    - [ ] Compound operations
+  - [ ] Control flow
+    - [ ] Comparison operations (and, or, not, ==, !=, <>, <=, >=)
+    - [ ] if elif else
+    - [ ] for
+    - [ ] while
+    - [ ] Variable scope
+  - [ ] Functions
+    - [ ] Structure
+    - [ ] arguments and setting defaults
+    - [ ] return values
+    - [ ] Scope cont.
+  - [ ] Other things
+    - [ ] `input()`
+    - [ ] Type casting?

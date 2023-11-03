@@ -1,0 +1,58 @@
+# Things to go over
+
+- [ ] Prerequisite hardware
+  - [ ] Pi 4 or 5
+    - [ ] 15W USB-C power adapter
+    - [ ] Ethernet cable (if doing headless setup without Wifi)
+    - [ ] Monitor
+    - [ ] Mouse
+    - [ ] Keyboard
+  - [ ] Zero W/2W
+    - [ ] Micro-B to USB-A cable (or uB to C)
+  - [ ] uSD card (recommended >=32GB)
+  - [ ] uSD card reader (or full size with adapter)
+- [ ] Prerequisite software
+  - [ ] Raspberry Pi Imager
+- [ ] Prerequisite knowledge
+  - [ ] None
+- [ ] OS setup
+  - [ ] Install Pi Imager
+  - [ ] Choose OS to flash (standard desktop or lite, 32-bit for Pi0W)
+  - [ ] Edit config in lower right settings menu
+  - [ ] Insert uSD card and power on
+  - [ ] GUI setup
+    - [ ] Plug in monitor, keyboard, and mouse
+    - [ ] Go through first boot instructions on screen (if there are any)
+  - [ ] Headless setup
+    - [ ] ssh into pi with set user and hostname (make sure hostnames are not conflicting)
+  - [ ] sudo apt update, upgrade, autoremove
+  - [ ] Reboot the system
+- [ ] Introduction to Linux
+  - [ ] PiOS (hardware specific distro)
+    - [ ] Show off some preinstalled apps?
+      - [ ] Raspi-config
+      - [ ] Chromium
+      - [ ] Libre apps
+      - [ ] Task manager
+  - [ ] Terminal
+    - [ ] help and man
+    - [ ] sudo
+    - [ ] "Everything is a file" and filesystem paths (absolute and relative)
+    - [ ] Navigational commands
+      - [ ] `pwd` and `whoami`
+      - [ ] `ls` and `cd`
+      - [ ] `mv` and `cp` (-r)
+      - [ ] `touch` and `rm` (-r -f)
+      - [ ] `mkdir` and `rmdir`
+    - [ ] Basic `nano` usage with 'Python Hello World!'
+    - [ ] `which` and `apt-get`
+      - [ ] `neofetch`
+    - [ ] `sudo raspi-config`
+    - [ ] `shutdown` and `reboot`
+    - [ ] Other commands
+      - [ ] `htop`
+      - [ ] `sysbench` and `stress`
+      - [ ] `watch -n 1 vcgencmd ...`
+      - [ ] `lua`, `g++`/`gcc`
+      - [ ] `ping`
+- [ ] "How to ... raspberry pi"
