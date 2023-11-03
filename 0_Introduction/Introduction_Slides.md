@@ -17,7 +17,7 @@ header: "*Introduction to Raspberry Pi* :pie:"
 By: Hedron Hackerspace
 
 ![](https://www.arm.com/-/media/global/Why%20Arm/partner/Partner%20Ecosystem/catalog/raspberry-pi/rasberry-pi-logo.png?rev=d8bda285533b4dbf9690d02a764dbf10&revision=d8bda285-533b-4dbf-9690-d02a764dbf10)
-
+<!-- _footer: "Rev. 1.0" -->
 ---
 
 # What is a Single Board Computer (SBC)?
