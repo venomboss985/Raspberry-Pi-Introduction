@@ -1,0 +1,31 @@
+# Things to go over
+
+- [ ] Introduction to Linux
+  - [ ] PiOS (hardware specific distro)
+    - [ ] Show off some preinstalled apps?
+      - [ ] Raspi-config
+      - [ ] Chromium
+      - [ ] Libre apps
+      - [ ] Task manager
+  - [ ] Terminal
+    - [ ] help and man
+    - [ ] sudo
+    - [ ] "Everything is a file" and filesystem paths (absolute and relative)
+    - [ ] Navigational commands
+      - [ ] `pwd` and `whoami`
+      - [ ] `ls` and `cd`
+      - [ ] `mv` and `cp` (-r)
+      - [ ] `touch` and `rm` (-r -f)
+      - [ ] `mkdir` and `rmdir`
+    - [ ] Basic `nano` usage with 'Python Hello World!'
+    - [ ] `which` and `apt-get`
+      - [ ] `neofetch`
+    - [ ] `sudo raspi-config`
+    - [ ] `shutdown` and `reboot`
+    - [ ] Other commands
+      - [ ] `htop`
+      - [ ] `sysbench`
+      - [ ] `vcgencmd`
+      - [ ] `lua`, `g++`/`gcc`
+      - [ ] `ping`
+- [ ] "How to ... raspberry pi"
