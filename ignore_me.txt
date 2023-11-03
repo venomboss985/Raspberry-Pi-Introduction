@@ -1,1 +1,1 @@
-Ignore me in the `.gitignore` file
+Ignore me by adding me in the `.gitignore` file
