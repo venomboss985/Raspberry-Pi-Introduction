@@ -9,10 +9,10 @@ style: |
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
-header: "*Basic Setup* :computer:"
+header: "*Basic Setup Pt. 1* :computer:"
 ---
 <!-- _header: "" -->
-# Initial Setup with Raspberry Pi :computer:
+# Initial Setup with the Raspberry Pi :computer:
 
 By: Hedron Hackerspace
 
