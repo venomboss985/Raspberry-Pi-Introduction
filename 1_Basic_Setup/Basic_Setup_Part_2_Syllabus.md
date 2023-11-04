@@ -1,7 +1,7 @@
 # Things to go over
 
 - [ ] Introduction to Linux
-  - [ ] PiOS (hardware specific distro)
+  - [ ] PiOS
     - [ ] Show off some preinstalled apps?
       - [ ] Raspi-config
       - [ ] Chromium
