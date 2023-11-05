@@ -17,7 +17,7 @@ header: "*Basic Setup Pt. 1* :computer:"
 By: Hedron Hackerspace
 
 ![bg right w:600](https://www.raspberrypi.org/app/uploads/2020/03/RPI_intro-e1583228263677.png)
-<!-- _footer: "Rev. 1.0" -->
+<!-- _footer: "Rev. 1.1" -->
 
 ---
 
