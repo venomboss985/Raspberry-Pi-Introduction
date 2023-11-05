@@ -1,31 +1,34 @@
 # Things to go over
 
-- [ ] Introduction to Linux
-  - [ ] PiOS
-    - [ ] Show off some preinstalled apps?
-      - [ ] Raspi-config
-      - [ ] Chromium
-      - [ ] Libre apps
-      - [ ] Task manager
-  - [ ] Terminal
-    - [ ] help and man
-    - [ ] sudo
-    - [ ] "Everything is a file" and filesystem paths (absolute and relative)
+- [x] Introduction to Linux
+  - [x] PiOS
+    - [x] Show off some preinstalled apps?
+      - [] Raspi-config
+      - [x] Chromium
+      - [x] Libre apps
+      - [x] Task manager
+  - [x] Terminal
+    - [x] help and man
+    - [x] sudo
+    - [x] "Everything is a file"
+    - [x] Absolute and relative paths (`~` and `/`)
     - [ ] Navigational commands
-      - [ ] `pwd` and `whoami`
-      - [ ] `ls` and `cd`
-      - [ ] `mv` and `cp` (-r)
-      - [ ] `touch` and `rm` (-r -f)
-      - [ ] `mkdir` and `rmdir`
-    - [ ] Basic `nano` usage with 'Python Hello World!'
-    - [ ] `which` and `apt-get`
-      - [ ] `neofetch`
-    - [ ] `sudo raspi-config`
-    - [ ] `shutdown` and `reboot`
-    - [ ] Other commands
-      - [ ] `htop`
-      - [ ] `sysbench`
-      - [ ] `vcgencmd`
-      - [ ] `lua`, `g++`/`gcc`
-      - [ ] `ping`
+      - [x] `pwd` and `whoami`
+      - [x] `ls` and `cd`
+      - [x] `touch` and `mkdir`
+      - [x] `rm` and `rmdir`
+      - [x] `mv` and `cp` (-r)
+      - [x] `cat`, `less`, and `head`/`tail`
+- [ ] During class
+  - [ ] Basic `nano` usage with 'Python Hello World!'
+  - [ ] `which` and `apt-get`
+    - [ ] `neofetch`
+  - [ ] `raspi-config`
+  - [ ] `shutdown` and `reboot`
+  - [ ] Other commands
+    - [ ] `htop`
+    - [ ] `sysbench` (must be installed)
+    - [ ] `vcgencmd`
+    - [ ] `lua`, `g++`/`gcc`
+    - [ ] `ping`
 - [ ] "How to ... raspberry pi"

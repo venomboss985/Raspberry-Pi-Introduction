@@ -1,29 +1,27 @@
 # Things to go over
 
-- [ ] Prerequisite hardware
-  - [ ] Pi 4 or 5
-    - [ ] 15W USB-C power adapter
-    - [ ] Ethernet cable (if doing headless setup without Wifi)
-    - [ ] Monitor
-    - [ ] Mouse
-    - [ ] Keyboard
-  - [ ] Zero W/2W
-    - [ ] Micro-B to USB-A cable (or uB to C)
-  - [ ] uSD card (recommended >=32GB)
-  - [ ] uSD card reader (or full size with adapter)
-- [ ] Prerequisite software
-  - [ ] Raspberry Pi Imager
-- [ ] Prerequisite knowledge
-  - [ ] None
-- [ ] OS setup
-  - [ ] Install Pi Imager
-  - [ ] Choose OS to flash (standard desktop or lite, 32-bit for Pi0W)
-  - [ ] Edit config in lower right settings menu
-  - [ ] Insert uSD card and power on
-  - [ ] GUI setup
-    - [ ] Plug in monitor, keyboard, and mouse
-    - [ ] Go through first boot instructions on screen (if there are any)
-  - [ ] Headless setup
-    - [ ] ssh into pi with set user and hostname (make sure hostnames are not conflicting)
-  - [ ] sudo apt update, upgrade, autoremove
-  - [ ] Reboot the system
+- [x] Prerequisite hardware
+  - [x] Pi 4 or 5
+    - [x] 15W USB-C power adapter
+    - [x] Ethernet cable (if doing headless setup without Wifi)
+    - [x] Monitor
+    - [x] Mouse
+    - [x] Keyboard
+  - [x] Zero W/2W
+    - [x] Micro-B to USB-A cable (or uB to C)
+  - [x] uSD card (recommended >=32GB)
+  - [x] uSD card reader (or full size with adapter)
+- [x] Prerequisite software
+  - [x] Raspberry Pi Imager
+- [x] OS setup
+  - [x] Install Pi Imager
+  - [x] Choose OS to flash (standard desktop or lite, 32-bit for Pi0W)
+  - [x] Edit config in lower right settings menu
+  - [x] Insert uSD card and power on
+  - [x] GUI setup
+    - [x] Plug in monitor, keyboard, and mouse
+    - [x] Go through first boot instructions on screen (if there are any)
+  - [x] Headless setup
+    - [x] ssh into pi with set user and hostname (make sure hostnames are not conflicting)
+  - [x] sudo apt update, upgrade, autoremove
+  - [x] Reboot the system
