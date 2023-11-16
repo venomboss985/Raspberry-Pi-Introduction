@@ -3,12 +3,12 @@
 - [ ] Basic `nano` usage with 'Python Hello World!'
 - [ ] `which` and `apt-get`
   - [ ] `neofetch`
-- [ ] `raspi-config`
+- [ ] `raspi-config` or `/boot/config.txt`
 - [ ] `shutdown` and `reboot`
 - [ ] Other commands
   - [ ] `htop`
   - [ ] `sysbench` (must be installed)
   - [ ] `vcgencmd`
-  - [ ] `lua`, `g++`/`gcc`
+  - [ ] `python`, `lua`, `gcc`/`g++`
   - [ ] `ping`
 - [ ] "How to ... raspberry pi"
