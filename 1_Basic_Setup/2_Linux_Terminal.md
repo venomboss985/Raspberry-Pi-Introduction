@@ -14,10 +14,14 @@ header: "*Basic Setup Pt. 2* :tv:"
 <!-- _header: "" -->
 # Linux and Terminal Overview :desktop_computer:
 
+* Pi OS desktop and compatibility overview
+* Hacking with the terminal
+* Some Pi specific commands
+
 By: Hedron Hackerspace
 
 ![bg right w:600](https://www.raspberrypi.org/app/uploads/2019/08/MAGPI_85_COVER020819-7.jpg)
-<!-- _footer: "Rev. 1.0" -->
+<!-- _footer: "Rev. 1.1" -->
 ---
 
 # Pi OS

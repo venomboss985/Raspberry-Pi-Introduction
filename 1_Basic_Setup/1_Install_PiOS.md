@@ -14,10 +14,15 @@ header: "*Basic Setup Pt. 1* :computer:"
 <!-- _header: "" -->
 # Initial Setup with the Raspberry Pi :computer:
 
+* Set up the hardware
+* Configure the OS
+* Flash and first boot
+* Update and shutdown
+
 By: Hedron Hackerspace
 
 ![bg right w:600](https://www.raspberrypi.org/app/uploads/2020/03/RPI_intro-e1583228263677.png)
-<!-- _footer: "Rev. 1.1" -->
+<!-- _footer: "Rev. 1.2" -->
 
 ---
 
