@@ -151,7 +151,7 @@ Congratulations, you just created and ran your first (allegedly) Python program!
 
 ---
 
-# Formatting cont.
+# Formatting continued
 
 Some languages use multiple cases. My personal style:
 
@@ -161,6 +161,6 @@ Some languages use multiple cases. My personal style:
 
 ![bg right w:800](https://cdn.ttgtmedia.com/rms/onlineimages/naming_conventions_in_java-f_mobile.png)
 
-I don't use Java... just for clarity.
+I don't use Java... don't be getting any ideas.
 
 ---
