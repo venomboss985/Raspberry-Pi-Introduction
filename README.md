@@ -23,12 +23,16 @@ Fully complete modules:
 - [x] 0. Raspberry Pi Introduction
 - [x] 1. Basic Setup
 - [ ] 2. Introduction to Python
-  - [ ] 2a. Variables, Math, Control Flow, and functions
-  - [ ] 2b. Lists, Files, Modules/Libraries, and OOP (objects)
+  - [ ] 2a. Variables, Math, Control Flow, and Functions
+  - [ ] 2b. Lists/Dicts, Files, Modules/Libraries, and OOP (objects)
   - [ ] 2c. Using GPIO with Python
 - [ ] 3. Using git and GitHub
 - [ ] 4. Self-hosting with Docker
 - [ ] 5. More TBD...
+
+# How are the slides rendered?
+
+I am using a VS Code extension called Marp which turns markdown into a slideshow presentation. Since it's all just markdown, it was really easy to just get started and learning some of the new stuff like working with images was not bad at all. There are some caveats to using Marp like using 2 columns on one slide isn't intuitive at all (have to use custom HTML and CSS, I am not a web dev), image options, and a lot of other QOL things. But with all its faults, it's much better than using some proprietary software that requires online access to use. I will probably be using the RISE plugin for Jupyter Notebooks when I make the AI/ML slides (for obvious reasons), but for pretty much everything else, this is a great extension that I highly recommend if you want a simplistic slideshow designer.
 
 # Where can I get help/suggest a change?
 
