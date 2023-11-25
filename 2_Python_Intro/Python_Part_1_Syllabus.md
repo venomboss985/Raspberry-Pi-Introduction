@@ -5,18 +5,20 @@
 - [x] cd into the folder and `nano hello_world.py`
 - [x] Write `print("Hello World!")`, hit CTRL+O, Enter, and CTRL+X to exit
 - [ ] To go over:
-  - [ ] Variables and data types
-    - [x] naming conventions (including snake_case)
-    - [ ] int, float, bool, string, etc.
-      - [ ] "10" != 10 (show addition example)
-  - [ ] Basic math operations
-    - [ ] +-*/%
-    - [ ] Compound operations
+  - [x] Formatting
+  - [x] Variables and data types
+    - [x] `int`, `float`, `bool`, `str`, etc.
+      - [x] `"10" != 10` (show addition example)
+  - [x] Basic math operations
+    - [x] +-*/%
+    - [x] Follows PEMDAS
+    - [x] Compound operations
   - [ ] Control flow
-    - [ ] Comparison operations (and, or, not, ==, !=, <>, <=, >=)
-    - [ ] if elif else
-    - [ ] for
-    - [ ] while
+    - [x] Comparison operations (`==`, `!=`, `<>`, `<=`, `>=`)
+    - [x] Logical operations (`and`, `or`, `not`)
+    - [x] Conditional statements (`if`, `elif`, `else`)
+    - [x] Loops (`for`, `while`)
+    - [x] Loop keywords (`break`, `continue`)
     - [ ] Variable scope
   - [ ] Functions
     - [ ] Structure

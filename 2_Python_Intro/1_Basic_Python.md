@@ -24,7 +24,7 @@ header: "*Python Introduction Pt. 1* :snake:"
 By: Hedron Hackerspace
 
 ![bg right w:600](https://quantumobile.com/static/0cddd58936ed9792f56f0da4b5c99b2d/5d2c5/1.png)
-<!-- _footer: "Rev 1.0" -->
+<!-- _footer: "Rev 1.0; Python ver. >=3.9.x" -->
 ---
 
 # Common Misconceptions Pt. 1
@@ -162,5 +162,257 @@ Some languages use multiple cases. My personal style:
 ![bg right w:800](https://cdn.ttgtmedia.com/rms/onlineimages/naming_conventions_in_java-f_mobile.png)
 
 I don't use Java... don't be getting any ideas.
+
+---
+
+# Variables
+
+```py
+age = 20    # Sets the variable named `age` equal to 20
+print(age)  # Prints the value of `age` to the terminal
+>>> 20
+```
+
+* Something that stores data
+* You can think of a variable like a food container
+  * Name of the variable = Container label
+  * Value in variable = Food itself
+  * Data type = Type of food that can be stored in the container
+  * Ex. `msg = "Hi"` stores the value "Hi" in a variable named `msg`
+
+---
+
+# Data Types
+
+* Type of data that can be stored (type of food for a container)
+* Lots of data types in Python:
+  * `int` - Any whole number (including negatives)
+  * `float` - Any decimal number (including negatives)
+  * `bool` - Binary value (`True` or `False`)
+  * `list` - Array of values
+  * `str` - List of characters
+  * `dict` - List of key-value pairs
+  * Others include: `range`, `bytes`, `tuple`, `set`
+
+---
+
+## Examples of data types
+
+* `int` - `10`, `23`, `-40`, `-96`, `1502089109740`, `-129379379`
+* `float` - `10.0`, `-1532.32523409`, `-302.`, `3.141592`
+* `bool` - `True`, `False`, `1`, `0`
+* `list` - `[1, 5, False, True, -23940.212, -129423, 364, -0.15246]`
+* `str` - `"Hello"`, `'a'`, `"Python loves memory"`, `"42.7837"`
+* `dict` - `{"apples": 10, "oranges": 7, "bananas": 4, "grapes": 26}`
+
+---
+
+## Why data types are important
+
+* Python is a loosely typed language
+  * Data types are implicitly set and sometimes implicitly casted
+  * Ex. `age = 20` automatically assigns `age` the data type of `int`
+* If data is used with the wrong data type, errors can be thrown
+  * Ex. `10 == "10"` will return `False` because integers are different from strings
+* Type casting changes the data type of a value
+  * Type cast by returning a value with a constructor
+  * Ex. `10 == int("10")` will return `True` because they have the same value
+
+---
+
+# Basic Math Operations
+
+```py
+age = 20        # Sets the variable `age` to equal 20
+age = age + 5   # Sets `age` to the current value of `age` and 5
+print(age)      # Prints the value of `age` to the terminal
+print(age % 5)  # Prints the remainder of `age` / 5
+>>> 25
+>>> 0
+```
+
+* Some basic operators include:
+  * Addition, subtraction, multiplication, division, remainder (+-*/%)
+  * Exponents, integer (floor) division (**, //)
+* More operations can be done with the `math` module
+
+---
+
+## Using Multiple Operations
+
+```py
+apples = 10
+oranges = 7
+bananas = 4
+fruit = apples + oranges + bananas
+print(fruit)
+>>> 21
+```
+
+```py
+num_fruits = 3
+avg_fruits = (apples + oranges + bananas) / num_fruits
+print(avg_fruits) 
+>>> 7.0
+```
+
+<!-- ```py
+x = 6
+y = 2*x-3
+print(y)
+>>> 9
+``` -->
+
+* PEMDAS rules apply
+
+---
+
+## Compound Operators
+
+```py
+count = 20
+count += 5
+count /= 5
+print(count)
+>>> 5.0
+```
+
+* Fast way to modify stored values
+* Uses the operator appended with `=`
+  * Ex. `count *= 7` multiplies 7 to the variable `count`
+  * Ex. `clients -= 10` subtracts 10 from the variable `clients`
+
+---
+
+# Control Flow
+
+* Doing different things under certain conditions
+  * Compare values to determine a condition
+  * Do something based on that condition
+  * Ex. If there are 6 fruit, print the number of apples
+* Doing something repeatedly
+  * Set the conditions of the repetition
+  * Do something based on that condition
+  * Ex. Send a "hello" message to every client connected to a server
+
+---
+
+## Comparison Operators
+
+```py
+print(42 > 2**8)
+>>> False
+```
+
+* Returns if a statement is `True` or `False`
+* Operators:
+  * `==`, `!=` - Equal to, Not equal to
+  * `<`, `>` - Less than, Greater than
+  * `<=` - Less than or equal to
+  * `>=` - Greater than or equal to
+
+---
+
+## Logical Operators
+
+```py
+print(42 > 2**8 or 42 < 700)
+print(not 42 >= 2**5)
+>>> True
+>>> False
+```
+
+* Returns if all statements are `True` and/or `False`
+* Operators:
+  * `and` - If at least one value is `False`, returns `False`
+  * `or` - If at least one value is `True`, returns `True`
+  * `not` - If value is `True`, return `False` (and vice versa)
+
+---
+
+## `if` Statement
+
+```py
+connected_clients = 3
+if connected_clients > 1:
+  print("Chatroom initializing")
+elif connected_clients == 10:
+  print("Chatroom limit reached")
+else:
+  print("Waiting for more clients")
+```
+
+* `if` - Runs the first codeblock if the condition is `True`
+* `elif` - Runs the second codeblock if the first condition is `False` and second condition is `True`
+* `else` - Runs the last codeblock if neither conditions are `True`
+
+---
+
+## `for` Loop
+
+```py
+result = 0
+numbers = [67, -236, -112, 445, 14]
+for num in numbers:
+  result += num
+  print(result)
+>>> 67
+>>> -169
+>>> -281
+>>> 164
+>>> 178
+```
+
+<!-- ```py
+total = 0
+for i in range(10):
+  total += i
+print(total)
+>>> 45
+``` -->
+
+* `num` is the value of the object at an internally tracked index
+* `numbers` can be any iterable object (ie. `range`, `list`, etc.)
+
+---
+
+## `while` Loop
+
+```py
+num = 0
+run = True
+while run == True:
+  num += 1
+  if num > 100:
+    run = False
+  print(num)
+>>> 1
+>>> 2
+>>> ...
+>>> 101
+```
+
+* Checks if the condition is `True` before running the code block
+* Once the condition returns `False`, the block will be skipped
+
+---
+
+## Going further with loops
+
+```py
+for num in range(10000):
+  if num % 2 == 0: continue
+  if num == 1000: break
+  print(num)
+>>> 1
+>>> 3
+>>> ...
+>>> 9997
+>>> 9999
+```
+
+* Both keywords can be used with either `for` or `while` loops
+* `break` - Exits the loop at the executed line
+* `continue` - Stops the code and starts again at the next iteration
 
 ---
