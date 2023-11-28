@@ -13,18 +13,17 @@
     - [x] +-*/%
     - [x] Follows PEMDAS
     - [x] Compound operations
-  - [ ] Control flow
+  - [x] Control flow
     - [x] Comparison operations (`==`, `!=`, `<>`, `<=`, `>=`)
     - [x] Logical operations (`and`, `or`, `not`)
     - [x] Conditional statements (`if`, `elif`, `else`)
     - [x] Loops (`for`, `while`)
     - [x] Loop keywords (`break`, `continue`)
-    - [ ] Variable scope
   - [ ] Functions
-    - [ ] Structure
-    - [ ] arguments and setting defaults
-    - [ ] return values
-    - [ ] Scope cont.
+    - [x] Structure
+    - [x] arguments and setting defaults
+    - [x] return values
+    - [ ] Variable scope cont.
   - [ ] Other things
     - [ ] `input()`
     - [ ] Type casting?

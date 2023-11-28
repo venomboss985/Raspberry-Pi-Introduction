@@ -168,8 +168,8 @@ I don't use Java... don't be getting any ideas.
 # Variables
 
 ```py
-age = 20    # Sets the variable named `age` equal to 20
-print(age)  # Prints the value of `age` to the terminal
+eggs = 20    # Sets the variable named `eggs` equal to 20
+print(eggs)  # Prints the value of `eggs` to the terminal
 >>> 20
 ```
 
@@ -192,7 +192,7 @@ print(age)  # Prints the value of `age` to the terminal
   * `list` - Array of values
   * `str` - List of characters
   * `dict` - List of key-value pairs
-  * Others include: `range`, `bytes`, `tuple`, `set`
+  * Others include: `range`, `bytes`, `tuple`, `set`, `None`
 
 ---
 
@@ -211,22 +211,22 @@ print(age)  # Prints the value of `age` to the terminal
 
 * Python is a loosely typed language
   * Data types are implicitly set and sometimes implicitly casted
-  * Ex. `age = 20` automatically assigns `age` the data type of `int`
+  * Ex. `eggs = 20` automatically assigns `eggs` the data type of `int`
 * If data is used with the wrong data type, errors can be thrown
   * Ex. `10 == "10"` will return `False` because integers are different from strings
 * Type casting changes the data type of a value
   * Type cast by returning a value with a constructor
-  * Ex. `10 == int("10")` will return `True` because they have the same value
+  * Ex. `10 == int("10")` will return `True` because they have the same value after the type cast
 
 ---
 
 # Basic Math Operations
 
 ```py
-age = 20        # Sets the variable `age` to equal 20
-age = age + 5   # Sets `age` to the current value of `age` and 5
-print(age)      # Prints the value of `age` to the terminal
-print(age % 5)  # Prints the remainder of `age` / 5
+eggs = 20        # Sets the variable `eggs` to equal 20
+eggs = eggs + 5  # Sets `eggs` to the current value of `eggs` and 5
+print(eggs)      # Prints the value of `eggs` to the terminal
+print(eggs % 5)  # Prints the remainder of `eggs` / 5
 >>> 25
 >>> 0
 ```
@@ -270,17 +270,18 @@ print(y)
 ## Compound Operators
 
 ```py
-count = 20
-count += 5
-count /= 5
-print(count)
+eggs = 20
+eggs += 5
+eggs /= 5
+print(eggs)
 >>> 5.0
 ```
 
 * Fast way to modify stored values
 * Uses the operator appended with `=`
-  * Ex. `count *= 7` multiplies 7 to the variable `count`
-  * Ex. `clients -= 10` subtracts 10 from the variable `clients`
+  * Ex. `biscuits *= 7` multiplies 7 to the variable `biscuits`
+  * Ex. `fruits -= 10` subtracts 10 from the variable `fruits`
+* Further operations can be used in the same line
 
 ---
 
@@ -289,11 +290,12 @@ print(count)
 * Doing different things under certain conditions
   * Compare values to determine a condition
   * Do something based on that condition
-  * Ex. If there are 6 fruit, print the number of apples
+  * Ex. If a person has nut allergy, use an alternative ingredient
 * Doing something repeatedly
   * Set the conditions of the repetition
   * Do something based on that condition
-  * Ex. Send a "hello" message to every client connected to a server
+  * Ex. Start timer when chicken reaches 160F internally
+  * Ex. Lightly butter all 12 biscuits
 
 ---
 
@@ -416,3 +418,92 @@ for num in range(10000):
 * `continue` - Stops the code and starts again at the next iteration
 
 ---
+
+# Functions
+
+```py
+# Adds 2 numbers together and says "Hello!"
+def addHello(a, b):
+  print(a + b)
+  print("Hello!")
+addHello(3, 5)
+>>> 8
+>>> Hello!
+```
+
+* Predefined block of code that can be called multiple times
+* Allows for modularity, code reuse, and clearer code
+* Can optionally have parameters (do different stuff based on input) and return values (output data that can be reused in later code)
+
+---
+
+## Function Structure Pt. 1
+
+```py
+def addHello(a, b):
+  print(a + b)
+  print("Hello!")
+# Return to global scope code...
+```
+
+* `def` - Start a function definition
+* `addHello` - Name of the function
+* `(a, b)` - Parameters of the function (optional)
+* Function scope - Code to run when function is called
+  * Function scope ends when the indent is inline with `def` </br> or if it returns a value
+
+---
+
+## Function Structure Pt. 2
+
+```py
+def func1():                # No parameters or return type
+def func2(a):               # One parameter
+def func3(a, b):            # Two parameters
+def func4(a = 7, b = 25):   # Two parameters, both with default values
+def func5(a, b = 25):       # Two parameters, one has a default value
+def func6(a: int, b: int):  # Two parameters that only allows integer values
+def func7(a, b) -> int:     # Two parameters and a return type
+```
+
+* Parameter - A variable used internally by the function
+  * Values can be passed through a parameter to change the output
+* Return - Outputs a value and ends the function
+  * Typically returned into a variable or `if` statement
+
+---
+
+## Function Parameters
+
+```py
+def doubleIt(num):  # Define `num` as a variable
+  num = num * 2     # Set the value of `num` to `num * 2`
+  print(num)        # Print the value of `num` to the terminal
+
+doubleIt(6)         # Call the function while passing in the value 6
+print(num)          # Attempt to print the value of `num`
+>>> 12
+>>> NameError
+```
+
+* `value` is used internally by the function (as a normal variable)
+* `value` does not exist in the global nor previous scopes
+  * You will get an error if you try to use a function's variable outside of its scope if it is not globally accessible
+
+---
+
+## Function Returns
+
+```py
+def doubleIt(value):
+  return value * 2
+
+num = doubleIt(6)
+print(num)
+>>> 12
+```
+
+* `return` will output data as a value that can be:
+  * Stored in a variable
+  * Used in another function
+  * Output to the console
