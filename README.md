@@ -23,7 +23,7 @@ Fully complete modules:
 - [x] 0. Raspberry Pi Introduction
 - [x] 1. Basic Setup
 - [ ] 2. Introduction to Python
-  - [ ] 2a. Variables, Math, Control Flow, and functions
+  - [x] 2a. Variables, Math, Control Flow, and functions
   - [ ] 2b. Lists, Files, Modules/Libraries, and OOP (objects)
   - [ ] 2c. Using GPIO with Python
 - [ ] 3. Using git and GitHub
