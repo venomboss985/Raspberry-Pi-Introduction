@@ -8,10 +8,12 @@
   - [ ] `print()`
   - [ ] `help()`
   - [ ] `input()`
+  - [ ] `type()`
 
 ## PART 2
 
-...
+- [ ] Other things
+  - [ ] `len()`
 
 ## PART 3
 
