@@ -2,8 +2,15 @@
 
 - [ ] Python cont.
   - [ ] Other data structures
-    - [ ] Lists and functions
-    - [ ] Dicts and functions
+    - [ ] Lists
+      - [ ] Creating a list
+      - [x] Accessing and changing values
+      - [ ] Slicing
+      - [ ] Functions
+        - [ ] Adding and removing values
+        - [ ] Sorting values
+      - [ ] List comprehensions
+    - [ ] Dicts
     - [ ] Tuples
     - [ ] Sets
   - [ ] Exception handling
