@@ -507,3 +507,21 @@ print(num)
   * Stored in a variable
   * Used in another function
   * Output to the console
+
+---
+
+## Function Scope
+
+```py
+def doubleIt(value):
+  doubled = value * 2
+  return doubled
+print(doubleIt(7))
+print(doubled)
+>>> 14
+>>> NameError
+```
+
+* Variables created inside functions can only be accessed inside the function (unless specified with `global`)
+  * `doubled` variable gets created inside the function
+  * `print(doubled)` raises `NameError` since it doesn't exist globally
