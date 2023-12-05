@@ -56,7 +56,7 @@ print(my_burrito[1])
 
 * Can be initialized with existing values
 * Values in the list can be accessed by writing `list[index]`
-  * Indexe values start at 0 and increment up by 1
+  * Index values start at 0 and increment up by 1
   * Values can be added to, removed from, and changed in lists
 * Lists can also be sorted or joined to other lists
 
