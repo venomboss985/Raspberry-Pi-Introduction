@@ -23,7 +23,7 @@ header: "*Python Introduction Pt. 2* :snake:"
 
 By: Hedron Hackerspace
 
-![bg right w:600](https://quantumobile.com/static/0cddd58936ed9792f56f0da4b5c99b2d/5d2c5/1.png)
+![bg right w:600](raspy_logo.png)
 <!-- _footer: "Rev 1.0; Python ver. >=3.9.x" -->
 ---
 
@@ -110,7 +110,7 @@ print(burrito[1:4])
 * Negative indices work in reverse order (and start at 1)
 * Slicing refers to selecting a range of indices to use
   * Starting index is inclusive, the ending index is exclusive
-  * Empty slice values default to `[beginning:end:step 1]`
+  * Empty slice values default to `[beginning:end:step=1]`
 
 ---
 

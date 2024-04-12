@@ -20,7 +20,7 @@ header: "*Basic Setup Pt. 2* :tv:"
 
 By: Hedron Hackerspace
 
-![bg right w:600](https://www.raspberrypi.org/app/uploads/2019/08/MAGPI_85_COVER020819-7.jpg)
+![bg right w:600](images/desk_setup.jpg)
 <!-- _footer: "Rev. 1.1" -->
 ---
 
@@ -36,7 +36,7 @@ By: Hedron Hackerspace
   * Interpreters and compilers
     <!-- (Python, C/C++, Lua, etc.) -->
 
-![bg right w:600](https://9to5linux.com/wp-content/uploads/2023/10/rpios.webp)
+![bg right w:600](images/bookworm_desktop.png)
 
 ---
 
@@ -80,7 +80,7 @@ By: Hedron Hackerspace
 * Navigation commands
 * Some Pi specific commands
 
-![bg right w:600](https://projects-static.raspberrypi.org/projects/raspberry-pi-using/f30504afb3b35e3da258c484813140d8277d6de3/en/images/pi-terminal-ls.png)
+![bg right w:600](images/pi_terminal.png)
 
 ---
 
@@ -125,7 +125,7 @@ By: Hedron Hackerspace
 * Shows every hardware device connected to the Pi
 * `ls /dev/bus/usb/001` shows what is currently plugged into the USB ports of the Pi
 
-![bg right w:600](https://i.stack.imgur.com/xexRF.png)
+![bg right w:600](images/ls_dev.png)
 <!-- _footer: "We will get into using `ls` later" -->
 ---
 

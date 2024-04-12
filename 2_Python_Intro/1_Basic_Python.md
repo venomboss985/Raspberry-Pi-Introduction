@@ -23,7 +23,7 @@ header: "*Python Introduction Pt. 1* :snake:"
 
 By: Hedron Hackerspace
 
-![bg right w:600](https://quantumobile.com/static/0cddd58936ed9792f56f0da4b5c99b2d/5d2c5/1.png)
+![bg right w:600](images/raspy_logo.png)
 <!-- _footer: "Rev 1.0; Python ver. >=3.9.x" -->
 ---
 
@@ -107,7 +107,7 @@ Pi OS already has Python and Nano installed, so all we need to do is open it. We
 * VS Code: Right click>Run Python>Run Python File in Terminal
 * nano: Ctrl+X to exit (after you save)>`python hello_world.py`
 
-![w:1000](image.png)
+![w:1000](images/terminal_test.png)
 
 Congratulations, you just created and ran your first (allegedly) Python program!
 
@@ -159,7 +159,7 @@ Some languages use multiple cases. My personal style:
 * camelCase: Functions
 * PascalCase: Objects
 
-![bg right w:800](https://cdn.ttgtmedia.com/rms/onlineimages/naming_conventions_in_java-f_mobile.png)
+![bg right w:800](images/java_conventions.png)
 
 I don't use Java... don't be getting any ideas.
 
@@ -335,13 +335,13 @@ print(not 42 >= 2**5)
 ## `if` Statement
 
 ```py
-connected_clients = 3
-if connected_clients > 1:
-  print("Chatroom initializing")
-elif connected_clients == 10:
-  print("Chatroom limit reached")
+customers = 3
+if customers > 1:
+  print("Wiping tables")
+elif customers == 10:
+  print("Restaurant full")
 else:
-  print("Waiting for more clients")
+  print("Waiting for customers")
 ```
 
 * `if` - Runs the first codeblock if the condition is `True`
@@ -426,13 +426,14 @@ for num in range(10000):
 def addHello(a, b):
   print(a + b)
   print("Hello!")
+
 addHello(3, 5)
 >>> 8
 >>> Hello!
 ```
 
 * Predefined block of code that can be called multiple times
-* Allows for modularity, code reuse, and clearer code
+* Allows for modularity, reuse of code, and clearer code
 * Can optionally have parameters (do different stuff based on input) and return values (output data that can be reused in later code)
 
 ---

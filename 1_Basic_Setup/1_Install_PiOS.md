@@ -21,7 +21,7 @@ header: "*Basic Setup Pt. 1* :computer:"
 
 By: Hedron Hackerspace
 
-![bg right w:600](https://www.raspberrypi.org/app/uploads/2020/03/RPI_intro-e1583228263677.png)
+![bg right w:600](images/rpi_imager.png)
 <!-- _footer: "Rev. 1.2" -->
 
 ---
@@ -148,7 +148,7 @@ Most of this stuff you can leave as default if on your home network. Once everyt
 * Headless:
   * Type `sudo shutdown now` and hit enter
 
-![bg right w:1000](https://beebom.com/wp-content/uploads/2021/08/2021-08-18-132656_1920x1080_scrot.jpg)
+![bg right w:1000](images/shutdown_btn.png)
 
 ---
 
