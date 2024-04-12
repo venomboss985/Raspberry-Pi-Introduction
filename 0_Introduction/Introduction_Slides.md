@@ -16,7 +16,7 @@ header: "*Introduction to Raspberry Pi* :pie:"
 
 By: Hedron Hackerspace
 
-![](https://www.arm.com/-/media/global/Why%20Arm/partner/Partner%20Ecosystem/catalog/raspberry-pi/rasberry-pi-logo.png?rev=d8bda285533b4dbf9690d02a764dbf10&revision=d8bda285-533b-4dbf-9690-d02a764dbf10)
+![](images/transparent_raspberrypi.png)
 <!-- _footer: "Rev. 1.0" -->
 ---
 
@@ -70,7 +70,7 @@ By: Hedron Hackerspace
 * Efficient (<10W when stress tested)
 * Cheap hardware*
 
-![bg right w:600](hero.webp)
+![bg right w:600](images/all_the_pis.webp)
 
 <!-- _footer: "* - Cheap when in stock" -->
 ---
@@ -99,7 +99,7 @@ By: Hedron Hackerspace
 * 40-pin GPIO header
 * 2-lane MIPI CSI/DSI ports
 
-![bg right w:600](https://assets.raspberrypi.com/static/raspberry-pi-4-labelled-f5e5dcdf6a34223235f83261fa42d1e8.png)
+![bg right w:600](images/pi4.png)
 
 ---
 
@@ -115,7 +115,7 @@ By: Hedron Hackerspace
   <!-- * LPDDR4X-4267 -->
 * A **TON** of other peripherals
 
-![bg right w:600](https://assets.raspberrypi.com/static/c671804c05a51efc4e3c2a1bdcbafbcf/e58b5/raspberry-pi-5.png)
+![bg right w:600](images/pi5.png)
 
 ---
 
@@ -131,7 +131,7 @@ By: Hedron Hackerspace
 * WiFi 2.4/5GHz, BT 4.1/BLE
 * MIPI CSI camera connector
 
-![bg right w:600](https://images.prismic.io/rpf-products/9371b539-77d4-47f1-b89b-aa65b23c9833_RPI+ZERO+W+ANGLE+2+REFRESH_.jpg?auto=compress%2Cformat&fit=max)
+![bg right w:600](images/pi01.png)
 
 ---
 
@@ -145,7 +145,7 @@ By: Hedron Hackerspace
 * WiFi 2.4GHz, BT 4.2/BLE
 * MIPI CSI camera connector
 
-![bg right w:600](zero2-close-up.webp)
+![bg right w:600](images/zero2-hero.webp)
 
 ---
 
