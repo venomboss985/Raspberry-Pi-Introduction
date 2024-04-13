@@ -13,5 +13,3 @@
     - [ ] Weather (get request to wttr.in)
     - [ ] Discord bot? (maybe not)
     - [ ] Tkinter (if gui)
-
-<!-- ml libs and pygame can be separate modules in class -->
