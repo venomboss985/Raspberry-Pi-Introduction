@@ -337,11 +337,11 @@ print(not 42 >= 2**5)
 ```py
 customers = 3
 if customers > 1:
-  print("Wiping tables")
+    print("Wiping tables")
 elif customers == 10:
-  print("Restaurant full")
+    print("Restaurant full")
 else:
-  print("Waiting for customers")
+    print("Waiting for customers")
 ```
 
 * `if` - Runs the first codeblock if the condition is `True`
@@ -356,8 +356,8 @@ else:
 result = 0
 numbers = [67, -236, -112, 445, 14]
 for num in numbers:
-  result += num
-  print(result)
+    result += num
+    print(result)
 >>> 67
 >>> -169
 >>> -281
@@ -384,10 +384,10 @@ print(total)
 num = 0
 run = True
 while run == True:
-  num += 1
-  if num > 100:
-    run = False
-  print(num)
+    num += 1
+    if num > 100:
+        run = False
+    print(num)
 >>> 1
 >>> 2
 >>> ...
@@ -403,9 +403,9 @@ while run == True:
 
 ```py
 for num in range(10000):
-  if num % 2 == 0: continue
-  if num == 1000: break
-  print(num)
+    if num % 2 == 0: continue
+    if num == 1000: break
+    print(num)
 >>> 1
 >>> 3
 >>> ...
@@ -424,8 +424,8 @@ for num in range(10000):
 ```py
 # Adds 2 numbers together and says "Hello!"
 def addHello(a, b):
-  print(a + b)
-  print("Hello!")
+    print(a + b)
+    print("Hello!")
 
 addHello(3, 5)
 >>> 8
@@ -442,8 +442,8 @@ addHello(3, 5)
 
 ```py
 def addHello(a, b):
-  print(a + b)
-  print("Hello!")
+    print(a + b)
+    print("Hello!")
 # Return to global scope code...
 ```
 
@@ -478,8 +478,8 @@ def func7(a, b) -> int:     # Two parameters and a return type
 
 ```py
 def doubleIt(num):  # Define `num` as a variable
-  num = num * 2     # Set the value of `num` to `num * 2`
-  print(num)        # Print the value of `num` to the terminal
+    num = num * 2     # Set the value of `num` to `num * 2`
+    print(num)        # Print the value of `num` to the terminal
 
 doubleIt(6)         # Call the function while passing in the value 6
 print(num)          # Attempt to print the value of `num`
@@ -497,7 +497,7 @@ print(num)          # Attempt to print the value of `num`
 
 ```py
 def doubleIt(value):
-  return value * 2
+    return value * 2
 
 num = doubleIt(6)
 print(num)
@@ -515,8 +515,8 @@ print(num)
 
 ```py
 def doubleIt(value):
-  doubled = value * 2
-  return doubled
+    doubled = value * 2
+    return doubled
 print(doubleIt(7))
 print(doubled)
 >>> 14
