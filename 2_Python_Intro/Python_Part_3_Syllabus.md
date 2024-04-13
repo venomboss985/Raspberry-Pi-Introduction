@@ -22,3 +22,6 @@
     - [ ] Weather (get request to wttr.in)
     - [ ] Discord bot? (maybe not)
     - [ ] Tkinter (if gui)
+- [ ] How to read documentation
+- [ ] How to debug your code
+- [ ] How to explore and experiment
