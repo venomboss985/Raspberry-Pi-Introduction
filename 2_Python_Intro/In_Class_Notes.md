@@ -14,6 +14,8 @@
 
 - [ ] Other things
   - [ ] `len()`
+  - [ ] Installing specific library versions
+  - [ ] Uninstalling libraries
 
 ## PART 3
 

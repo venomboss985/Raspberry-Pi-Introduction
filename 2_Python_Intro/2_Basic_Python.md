@@ -210,3 +210,156 @@ print(clean_items["Pans"])
 * `update(entry: dict)` updates the dict entry's value
   * Can use `clean_items["Pans"] = 4`, even if that key doesn't exist
 * `pop(entry: str)` deletes an entry in the dict
+
+---
+
+# File IO
+
+* 2 different methods for interacting with files
+  1. **Using `open()`:** Built-in Python function for interacting with </br> text-based files (ex. `.txt`, etc.)
+  2. **Using another library/module:** Libraries that work with specific file types (ex. `.json`, `.csv`, `.yaml`, etc.)
+* Today, we'll be using the first method to keep things simple
+
+---
+
+## File Permission Modes
+
+* 4 different file permission modes
+  * `'x'` - Creates the file
+  * `'r'` - Reads from the file
+  * `'w'` - Overwrites the entire file
+  * `'a'` - Appends to the end of the file
+* All modes return an error if the file does not exist (inverted with `'x'` mode)
+
+---
+
+## Creating Files
+
+```py
+file = open("my_recipe.txt", 'x') # Creates a file object
+file.close()                    # Closes the file object
+```
+
+* `open(file: str, mode: str)` returns a file object
+* The file that you would like to edit does not have to be in the same directory as the executing program
+* `close()` closes the file object
+* The file must be closed when you are done reading from or writing to it to help prevent file corruption
+
+---
+
+## Writing Files
+
+```py
+file = open("my_recipe.txt", 'w')             # Open a file called `my_recipe.txt`
+file.write("This recipe will be delicious!")  # Write some text to the file
+file.close()                                  # Close the file
+```
+
+* `write(text: str)` writes the string to the file
+* `writelines(text: [str])` writes a list of strings to the file
+* **WARNING:** This will **<u>completely overwrite</u>** the file, so be careful and either save it's contents before running or choose `'a'` as the mode
+
+---
+
+## Reading Files
+
+```py
+file = open("my_recipe.txt", 'r')
+recipe = file.readlines(8)
+file.close()
+print(recipe)
+>>> This rec
+```
+
+* `read(bytes: int)` reads up to n-bytes of the file, reads the whole file if `bytes` is not specified
+* `readline(size: int)` reads up to n-bytes from one line of the file, reads the whole line if `size` is not specified
+
+---
+
+# Libraries/Modules
+
+* Provides additional functionality to your Python program
+* Usually installed using `pip`, the main Python package installer
+* Library, module, package, extension, and API are often used interchangeably, so don't get confused if you hear any of these
+* Python comes with some pre-installed "standard libraries" like `math`, `random`, `os`, `time`, `curses`, `tkinter`, and more
+  * You can find a complete list on the Python docs
+
+---
+
+## Installing Libraries
+
+This example installs the Numpy library:
+
+1. Open a terminal window and enter `pip --version`
+2. If `pip` is installed properly, type `pip install numpy`
+   1. To update the library, add `--upgrade` before listing packages
+3. After a minute, you should see a message from `pip` akin to "numpy-\<version> has been successfully installed"
+4. In the same terminal window, enter the Python interpreter with `python`
+5. Test the installation with `import numpy; print(numpy.__version__)`
+
+---
+
+## Using Libraries
+
+```py
+import numpy as np    # Import Numpy under the alias `np`
+
+print(np.arange(100)) # Create a range of numbers from 0 to 99
+```
+
+* `import numpy` will allow use of the specified library
+* `as np` changes the alias that is used from `numpy` to `np`
+  * Not very useful in this example, but a great time saver when using libraries extensively
+* Numpy is a useful math library that is extremely performant
+* This basic program generates and prints a number range from 0-99
+
+---
+
+# Creating Custom Modules
+
+1. First in a new workspace or folder, create two files
+   1. `unit_conversion.py` will be your main program file
+   2. `units.py` will be your custom made unit conversion module
+2. Then choose some units that you want to convert, some ideas include:
+   1. Celsius <-> Fahrenheit
+   2. Millimeters <-> Inches
+   3. Watts <-> Joules
+3. Now let's start implementing everything
+
+---
+
+## Creating the Conversion Functions
+
+```py
+def toFahrenheit(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+def toCelsius(fahrenheit):
+    celsius = (fahrenheit - 32) * 5/9
+    return celsius
+```
+
+* In the `units.py` file, we are going to create a conversion function for both Fahrenheit and Celsius
+* Each function simply returns the converted value
+* Variables, functions, and objects can also be referenced from here
+
+---
+
+## Using Your Module
+
+```py
+import units
+
+temp_f = 68.0
+temp_c = 15.0
+
+conv_f = units.toCelsius(temp_f)
+conv_c = units.toFahrenheit(temp_c)
+
+print(f"Celsius: {temp_c}C/Converted: {conv_c}F")
+print(f"Fahrenheit: {temp_f}F/Converted: {conv_f}C")
+```
+
+* `import units` will run all of the Python code from your module
+* All variables, functions, and objects are references with `units`

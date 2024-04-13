@@ -9,19 +9,19 @@
       - [x] Adding and removing values
       - [x] ... at specific indices
   - [x] Dicts
-- [ ] File IO
-  - [ ] Open and close files (long way)
-  - [ ] Easy method file open management
-  - [ ] File permissions
-- [ ] Modules
-  - [ ] Default modules (example with math, random, or time)
-  - [ ] Creating your own modules
-- [ ] Libraries (maybe for GPIO module?)
-  - [ ] Pip (use Pygame?)
-    - [ ] Installing and updating libraries
-    - [ ] Removing libraries
-    - [ ] Listing installed libraries
-    - [ ] Freezing
+- [x] File IO
+  - [x] File permissions
+  - [x] Open and close files
+  - [x] Read from files
+  - [x] Write to files
+- [x] Modules
+  - [x] Default modules (example with math, random, or time)
+  - [x] Creating your own modules
+- [x] Libraries
+  - [x] `pip --version` to verify installation
+  - [x] Install Numpy
+    - [x] Update Numpy
+  - [x] Use Numpy in a simple program
 
 ## To go over later
 
