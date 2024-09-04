@@ -16,8 +16,8 @@ header: "*Introduction to Raspberry Pi* :pie:"
 
 By: Hedron Hackerspace
 
-![](images/transparent_raspberrypi.png)
-<!-- _footer: "Rev. 1.0" -->
+![ ](images/transparent_raspberrypi.png)
+
 ---
 
 # What is a Single Board Computer (SBC)?
@@ -32,7 +32,7 @@ By: Hedron Hackerspace
 * Runs some distribution of Linux (ie. Debian, Ubuntu, etc.)
 
 ---
-<!-- _footer: "Touchscreen device, overclocking, ..." -->
+
 # What are SBC's typically used for?
 
 **Short answer:** Pretty much anything
@@ -44,7 +44,7 @@ By: Hedron Hackerspace
 * Software development
 * Retro gaming
 * Server host
-* Security
+* Home/Network Security
 
 </div>
 <div>
@@ -67,24 +67,25 @@ By: Hedron Hackerspace
 * Community and support
 * Documentation
 * Open source
-* Efficient (<10W when stress tested)
-* Cheap hardware*
+* Efficient* (<10W when stress tested)
+* Cheap hardware**
 
 ![bg right w:600](images/all_the_pis.webp)
 
-<!-- _footer: "* - Cheap when in stock" -->
+<!-- _footer: "* - Relative to x86 machines; ** - Relative to SBCs" -->
 ---
 
 # Who is the Raspberry Pi Foundation?
 
 * UK based company, only 1 official Pi store in the Netherlands
 * Named 'Raspberry Pi' in congruence with other fruit based companies
-* "Computing for everyone"
+* "Computing for everyone" motto
 * Specialize in low cost, educational computers
 * Became *the* company for Linux/ARM SBCs
-* Make SBCs, MCUs, and accessories (and magazine)
-* Most recent Raspberry Pi 5 started preorders this October
+* Produce SBCs, MCUs, software, and accessories (and magazine)
+* Latest product is the Raspberry Pi 5* (2-3x performance)
 
+<!-- _footer: "* - Relative to Pi 4 in certain applications" -->
 ---
 
 # Raspberry Pi 4 Model B Specs
@@ -92,10 +93,8 @@ By: Hedron Hackerspace
 * CPU: BCM2711
   * 4x Cortex-A72 cores @ 1.5GHz
 * GPU: VideoCore VI
-  * 500MHz base <!-- , 700MHz OC -->
-  <!-- * H264/H265, OpenGL ES 3.1, Vulkan 1.0 -->
+  * 500MHz base, 700MHz OC
 * RAM: 1GB, 2GB, 4GB, 8GB
-  <!-- * LPDDR4-3200 -->
 * 40-pin GPIO header
 * 2-lane MIPI CSI/DSI ports
 
@@ -109,10 +108,8 @@ By: Hedron Hackerspace
   * 4x Cortex-A76 cores @ 2.4GHz
   * Cryptography extensions
 * GPU: VideoCore VII
-  * 800MHz base <!-- , 1GHz OC -->
-  <!-- * H264/H265, OpenGL ES 3.1, Vulkan 1.2 -->
+  * 800MHz base, 1GHz OC
 * RAM: 4GB and 8GB
-  <!-- * LPDDR4X-4267 -->
 * A **TON** of other peripherals
 
 ![bg right w:600](images/pi5.png)
@@ -125,7 +122,6 @@ By: Hedron Hackerspace
   * 1x ARM11 core @ 1GHz
 * GPU: VideoCore IV
   * 250MHz base <!-- , 400MHz OC -->
-  <!-- * OpenGL ES 2.0 -->
 * RAM: 512MB
 * 40-pin GPIO header
 * WiFi 2.4/5GHz, BT 4.1/BLE
@@ -139,7 +135,6 @@ By: Hedron Hackerspace
 
 * CPU: RP3A0-AU
   * 4x Cortex-A53 cores @ 1GHz
-  <!-- * H264, MPEG-4 -->
 * GPU: VideoCore IV
 * RAM: 512MB (unfortunately)
 * WiFi 2.4GHz, BT 4.2/BLE
@@ -149,18 +144,19 @@ By: Hedron Hackerspace
 
 ---
 
-# Why is the Pi Pico/W not listed?
+# Why is the Pi Pico not listed?
 
-* Pico is a microcontroller board
+* Pico is a microcontroller development board
   * Fundamentally different
-  * Does not run Linux (or any kind OS)
+  * Does not run Linux (or any kind operating system*)
   * Runs single Python or C++ programs
-* Learn more in the upcoming Arduino/Microcontroller classes
+* Learn more in the upcoming Arduino/Microcontroller workshops
   * Hosted by yours truly
 
+<!-- _footer: "* - Unless you use an RTOS, which is still different than a normal OS" -->
 ---
 
-# Other SBC Brands and Vendors
+# Some Other SBC Brands and Vendors
 
 <div class=columns>
 <div>
@@ -170,11 +166,11 @@ By: Hedron Hackerspace
 * Orange/Mango/Banana Pi
 * BeagleBone
 * Nvidia
-* Coral
 * Asus
 * Khadas
 * FriendlyElec
-* Milk-V
+* Milk-V (Risc-V)
+* Luck Fox (Risc-V)
 
 </div>
 <div>
@@ -197,15 +193,15 @@ By: Hedron Hackerspace
 
 # What is Linux :penguin:?
 
-* Free and open source OS
+* Free and open source OS developed by the Linux Foundation
 * Supports many different ISAs (instruction set architectures)
   * x86
   * ARM
   * RISC-V
 * Very different from Windows
-  * Terminal is almost a necessity
-  * Much less application compatibility
-  * Significantly less bloat/background activity
+  * Terminal is somewhat a necessity
+  * Less application compatibility (if not using translation)
+  * Significantly less bloat/background activity (ex. memory use)
 
 ---
 
@@ -214,10 +210,10 @@ By: Hedron Hackerspace
 **You will need:**
 
 1. Your Pi of choice (>3B or Zero W)
-2. MicroSD card and adapter (recommended >=32GB)
+2. MicroSD card and adapter (recommended <u>></u>32GB)
 3. Power adapter for your Pi (5-25W)
 4. Computer or laptop with Pi Imager installed
 
 * GUI setup: Monitor, keyboard, and mouse
-* Headless setup: Ethernet or USB data cable to computer
+* Headless setup: Ethernet, USB, or serial adapter cable to computer
 <!-- _footer: "Continue to next section: **1_Basic_Setup**" -->

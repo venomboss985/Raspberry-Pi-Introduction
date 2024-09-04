@@ -21,7 +21,7 @@ header: "*Basic Setup Pt. 2* :tv:"
 By: Hedron Hackerspace
 
 ![bg right w:600](images/desk_setup.jpg)
-<!-- _footer: "Rev. 1.1" -->
+
 ---
 
 # Pi OS
@@ -32,9 +32,8 @@ By: Hedron Hackerspace
   * LxTask => Task Manager
 * Contains some development utilities
   * IDEs and text editors
-    <!-- (VS Code, Thonny, `nano`, `vim`, etc.) -->
-  * Interpreters and compilers
-    <!-- (Python, C/C++, Lua, etc.) -->
+  * Interpreters/compilers
+  * Lots of CLI tools
 
 ![bg right w:600](images/bookworm_desktop.png)
 
@@ -49,7 +48,7 @@ By: Hedron Hackerspace
   * 4 cores, 4 threads (no SMT* or hyperthreading)
     * Slow cores (at most 2.1GHz all core)
   * 8GB RAM (at most)
-  * Might be using a small MicroSD card
+  * Might be using a small and/or slow MicroSD card
 <!-- _footer: "* - Simultaneous multithreading" -->
 ---
 
@@ -70,7 +69,7 @@ By: Hedron Hackerspace
 # The Terminal
 
 * Text-based interface
-* Directly talks to the OS
+* Speaks directly to the OS
 * Extremely powerful tool
 * Deceptively simple
 
@@ -89,10 +88,10 @@ By: Hedron Hackerspace
 <div class=columns>
 <div>
 
-## `help` command
+## `--help` flag
 
 * `<command> --help`
-* Prints out how to use the command
+* Prints out the basics on how to use the flagged command
 * Try running `cd --help`
 
 </div>
@@ -129,7 +128,7 @@ By: Hedron Hackerspace
 <!-- _footer: "We will get into using `ls` later" -->
 ---
 
-# Who and Where Am I?
+# Who, What, and Where Am I?
 
 <div class=columns>
 <div>
@@ -138,14 +137,14 @@ By: Hedron Hackerspace
 
 * Prints the working directory/folder you are currently in
   * Ex. `pwd`
-* Short for "print working directory"
+* Short for </br>"print working directory"
 
 </div>
 <div>
 
 ## `whoami` command
 
-* Prints the current logged in user
+* Prints the currently logged in user
   * Ex. `whoami`
 
 ## `hostname` command
@@ -155,7 +154,6 @@ By: Hedron Hackerspace
 
 </div>
 </div>
-<!-- _footer: "Might seem useless, but they're used in shell commands and scripts" -->
 
 ---
 
@@ -177,7 +175,7 @@ By: Hedron Hackerspace
 
 ## `cd` command
 
-* Changes the working directory*
+* Changes the active/working directory*
   * Ex. `cd ~/Desktop`
 * Short for "change or choose directory"
 * Uses relative and absolute directories
@@ -185,7 +183,7 @@ By: Hedron Hackerspace
 </div>
 </div>
 
-<!-- _footer: "* - Assumes local directory if not specified" -->
+<!-- _footer: "* - Assumes current directory if not specified" -->
 ---
 
 ## Relative and Absolute Paths
@@ -193,7 +191,7 @@ By: Hedron Hackerspace
 * There are relative and absolute directories:
   * `.`  = Relative/current folder
   * `..` = Up one level
-  * `~`  = Home directory
+  * `~`  = Home directory of the active user
   * `/`  = Root directory
 * Makes folder navigation much quicker
 * Directories can be strung together
@@ -228,7 +226,7 @@ By: Hedron Hackerspace
 </div>
 </div>
 
-<!-- _footer: "* - Assumes local directory if not specified" -->
+<!-- _footer: "* - Assumes current directory if not specified" -->
 ---
 
 # Deleting Files and Folders
@@ -252,9 +250,8 @@ By: Hedron Hackerspace
 * Deletes the specified folder
   * Ex. `rmdir build`
 * Short for "remove directory"
-* Will not work if folder contains any items
 * `-p` flag deletes parent folders
-* Delete non-empty folders with `--ignore-fail-on-non-empty`
+* Will not work if folder contains any items
 
 </div>
 </div>
@@ -268,10 +265,10 @@ By: Hedron Hackerspace
 
 ## `mv` command
 
-* Moves contents to a new directory
+* Moves contents to a </br> new directory
   * Ex. `mv notes.txt ~/Documents`
 * Short for "move"
-* Can rename files
+* Also renames files
   * Ex. `mv notes.txt nos.md`
 * Works with folders too
 
@@ -280,7 +277,7 @@ By: Hedron Hackerspace
 
 ## `cp` command
 
-* Copies file to another directory
+* Copies a file to a </br> new directory
   * Ex. `cp program.o ~/Desktop`
 * Short for "copy"
 * `-r` flag recursively copies folder contents
@@ -311,7 +308,7 @@ By: Hedron Hackerspace
 
 ## `head`/`tail` commands
 
-* Prints first/last 10 lines of a file
+* Prints first/last 10 lines </br> of a file
   * Ex. `tail notes.txt`
 * `-n` prints N amount of lines
   * Ex. `head -n 25 notes.txt`

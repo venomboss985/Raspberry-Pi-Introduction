@@ -22,7 +22,6 @@ header: "*Basic Setup Pt. 1* :computer:"
 By: Hedron Hackerspace
 
 ![bg right w:600](images/rpi_imager.png)
-<!-- _footer: "Rev. 1.2" -->
 
 ---
 
@@ -30,8 +29,8 @@ By: Hedron Hackerspace
 
 * Computer or laptop with Pi Imager installed
 * 15-25W USB-C power adapter
-* \>32GB MicroSD card and adapter
-* GUI setup:
+* <u>></u>32GB MicroSD card and adapter
+* GUI setup (recommended):
   * MicroHDMI to HDMI adapter and HDMI cable (for monitor)
     * Or MicroHDMI to HDMI cable
   * USB keyboard and mouse
@@ -40,16 +39,16 @@ By: Hedron Hackerspace
 
 ---
 
-# Hardware Requirements (Pi Zero 2W)
+# Hardware Requirements (Pi Zero)
 
 * Computer or laptop with Pi Imager installed
-* \>32GB MicroSD card and adapter
+* <u>></u>32GB MicroSD card and adapter
 * GUI setup:
   * Micro USB cable to power supply
   * Mini HDMI to HDMI adapter and HDMI cable (for monitor)
     * Or a Mini HDMI to HDMI cable
   * Micro USB hub (for keyboard/mouse)
-* Headless setup (recommended for Zero boards):
+* Headless setup (recommended):
   * Micro USB data cable to computer
 
 ---
@@ -58,10 +57,10 @@ By: Hedron Hackerspace
 
 * Choose the OS
   * Raspberry Pi OS (64-bit)
-  * Use Lite version if GUI is not needed
+  * Use Lite version if setting up headless
 * Choose Storage Device
   * Insert and select your MicroSD card
-* OS Config Menu (settings cog)
+* OS Config Menu
   * Set certain user and system settings on boot
 * Write
   * Flash the OS and config onto the MicroSD card
@@ -73,14 +72,14 @@ By: Hedron Hackerspace
 * Hostname - Name of the computer
 * Enable SSH - Enable if setting up headless
 * Set username and password - Defaults to `pi` for both fields
-* Configure wireless LAN - Connect to WiFi
-* Set Locale Settings - Set to `America/Los_Angeles` (same timezone)
+* Configure wireless LAN - Connect to WiFi with given credentials
+* Set Locale Settings - Set to `America/Los_Angeles`
 
 Most of this stuff you can leave as default if on your home network. Once everything is set, flash your card*, insert it into the Pi, and give it power!
-<!-- _footer: "* - There is one additional step for Pi Zero 2W using Ethernet via USB" -->
+<!-- _footer: "* - There is one additional step for Zero boards using Ethernet via USB" -->
 ---
 
-### For Pi Zero 2W users
+### For Pi Zero users
 
 * Once the OS is flashed, reinsert the card into your computer
 * Navigate to the `config.txt` file
@@ -93,7 +92,7 @@ Most of this stuff you can leave as default if on your home network. Once everyt
 
 ## First Boot (GUI)
 
-* Give the Pi a minute to boot
+* Give the Pi a minute or two to boot
 * Once you see a first boot screen, login with your previously input username and password
 * After you've logged in, make sure you have a solid internet connection to update the Pi in later instructions
 * You can check on the top right of the taskbar
@@ -118,7 +117,7 @@ Most of this stuff you can leave as default if on your home network. Once everyt
 * If nothing comes back from the ping:
   * Make sure you are entering the right user and host names
   * Make sure it has the right network credentials
-  * Make sure nothing else on the network is using the same hostname as the Pi (can conflict with connections)
+  * Make sure nothing else on the network is using the same hostname as the Pi (can conflict with other connections)
   * If wired, make sure the ethernet cable is good
     * Or if using a Pi Zero, that its a data cable, not 'charge only'
   * Give it more time to fully boot, or reboot if waited >5-10 mins
@@ -129,13 +128,13 @@ Most of this stuff you can leave as default if on your home network. Once everyt
 # Updating the Pi
 
 * Make sure you're connected to the internet before updating
-* Check with `ping google.com` (should return something)
+  * Check with `ping google.com` (should return something)
 * Open a terminal and input these commands </br> one at a time (enter `y` when prompted)
   * `sudo apt-get update` - Update `apt` repositories
   * `sudo apt-get upgrade` - Upgrade available packages
   * `sudo apt-get autoremove` - Uninstall any unused packages
   * `sudo reboot` - Reboots the computer (optional, but suggested)
-* Log back in again and your Pi is now updated
+* Log back in again and your Pi is now updated!
 
 ---
 
@@ -160,4 +159,4 @@ Most of this stuff you can leave as default if on your home network. Once everyt
   * Navigation, creating and deleting files and folders, </br> and system monitoring
 * Foundational to using and troubleshooting the Raspberry Pi
 * And more!!
-<!-- _footer: "Continue to next section: **Basic_Setup_Part_2_Slides.pdf**" -->
+<!-- _footer: "Continue to next section: **Basic_Setup_Part_2_Slides**" -->
