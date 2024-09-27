@@ -24,7 +24,7 @@ header: "*Python Introduction Pt. 1* :snake:"
 By: Hedron Hackerspace
 
 ![bg right w:600](images/raspy_logo.png)
-<!-- _footer: "Python ver. >=3.9" -->
+<!-- _footer: "Python ver. <u>></u>3.9" -->
 ---
 
 # Common Misconceptions 1/2

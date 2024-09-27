@@ -24,7 +24,7 @@ header: "*Python Introduction Pt. 2* :snake:"
 By: Hedron Hackerspace
 
 ![bg right w:600](images/raspy_logo.png)
-<!-- _footer: "Rev 1.0; Python ver. >=3.9" -->
+<!-- _footer: "Python ver. <u>></u>3.9" -->
 ---
 
 # Lists, Dictionaries, Tuples, and Sets
