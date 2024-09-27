@@ -237,7 +237,7 @@ print(clean_items["Pans"])
 
 ```py
 file = open("my_recipe.txt", 'x') # Creates a file object
-file.close()                    # Closes the file object
+file.close()                      # Closes the file object
 ```
 
 * `open(file: str, mode: str)` returns a file object
@@ -346,7 +346,7 @@ def toCelsius(fahrenheit):
 
 ---
 
-## Using Your Module
+## Using Your Module Pt. 1
 
 ```py
 import units
@@ -361,5 +361,49 @@ print(f"Celsius: {temp_c}C/Converted: {conv_c}F")
 print(f"Fahrenheit: {temp_f}F/Converted: {conv_f}C")
 ```
 
-* `import units` will run all of the Python code from your module
-* All variables, functions, and objects are references with `units`
+* Use `import units` to import your module into your program
+* All variables, functions, and objects are referenced with `units`
+
+---
+
+## Using Your Module Pt. 2
+
+<div class=columns>
+<div>
+
+### `main.py`
+
+```py
+import units
+
+print("Celsius: ", end='')
+print(units.toCelsius(-40))
+print("Fahrenheit: ", end='')
+print(units.toFahrenheit(-40))
+
+>>> Units module initialized
+>>> Celsius: -40.0
+>>> Fahrenheit: -40.0
+```
+
+</div>
+
+<div>
+
+### `units.py`
+
+```py
+def toFahrenheit(celsius):
+    return (celsius * 9/5) + 32
+    
+def toCelsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+  
+# Global scope code...
+print("Units module initialized")
+```
+
+* *All* code in a module runs when it gets imported
+
+</div>
+</div>

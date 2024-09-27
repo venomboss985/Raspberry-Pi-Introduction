@@ -24,13 +24,13 @@ header: "*Python Introduction Pt. 1* :snake:"
 By: Hedron Hackerspace
 
 ![bg right w:600](images/raspy_logo.png)
-<!-- _footer: "Rev 1.1; Python ver. >=3.9" -->
+<!-- _footer: "Python ver. >=3.9" -->
 ---
 
-# Common Misconceptions Pt. 1
+# Common Misconceptions 1/2
 
 * "You need to be **smart**"
-  * No you don't, just look at the instructor
+  * No you don't, just look at the workshop creator
 * "You need to know **a lot of difficult maths**"
   * Nope, Python and libraries will do most of it for you
 * "Programming is **boring**"
@@ -40,12 +40,12 @@ By: Hedron Hackerspace
 
 ---
 
-# Common Misconceptions Pt. 2
+# Common Misconceptions 2/2
 
 * "Python is for **children**"
-  * A lot of data science and cybersecurity fields use </br> nothing *but* Python
+  * A lot of professional data science and cybersecurity fields use nothing *but* Python
 * "Programming **isn't creative**"
-  * If anything, you have to* be creative to program
+  * If anything, you have to be creative* to program
 * "You have to know **a lot of computer science**"
   * Really only the basics are needed
 <!-- _footer: "* - At least somewhat" -->
@@ -70,18 +70,18 @@ By: Hedron Hackerspace
 
 Pi OS already has Python installed, so all we need is an **IDE**. We're going to use **VS Code**, but use whichever IDE you want.
 
-* Open a terminal window and enter `sudo apt install code-oss`
+* Open a terminal window and enter
+  1. `sudo apt install snapd`
+  2. `sudo snap install code --classic`
 * Type in your password and accept the "Are you sure?" prompt
 * Once installation is complete, enter `code` in the terminal and VS Code should automatically open
-  * Or you can go into the applications menu to open it
 * Go into extensions and install the official Python extension
-* Sign into GitHub if you have an account (not required)
 
 ---
 
 # Headless: Nano
 
-Pi OS already has Python and Nano installed, so all we need to do is open it. We're going to use **Nano**, but use whichever editor you want.
+Pi OS already has Python and Nano installed, so all we need to do is open it. We're going to use **Nano**, but you can use whichever editor you want.
 
 * Open a terminal window and enter `nano`
 * That's it...
@@ -120,9 +120,9 @@ Congratulations, you just created and ran your first (allegedly) Python program!
 * Cooking == Programming
   * Conceptually the same thing, just one is significantly tastier
   * If you can cook or follow instructions, you can program
-* EVERYTHING IS BINARY
-  * This is a slightly more intermediate and won't be useful until a bit later
-* The further you break something down, the easier it will be to implement
+* ***EVERYTHING*** IS BINARY
+  * This is slightly more intermediate and won't be useful until learning more Python later
+* Disintegrate your project (ex. break every component down)
 
 ---
 
@@ -143,7 +143,7 @@ Congratulations, you just created and ran your first (allegedly) Python program!
 
 * [PEP-8](https://peps.python.org/pep-0008/) is the official Python Style Guide
   * Follow this if other people will see your code (industry standard)
-* You can also develop your own style (like myself)
+* Can also develop your own style if no one else is using your code
 * If you want to follow a common casing, choose one of these:
   * **snake_case**: all lowercase, spaces are replaced with an underscore (PEP-8 uses this for *nearly everything*)
   * **camelCase**: no spaces, first letter of every word except the start is captialized (never used in Python)
@@ -202,7 +202,7 @@ print(eggs)  # Prints the value of `eggs` to the terminal
 * `float` - `10.0`, `-1532.32523409`, `-302.`, `3.141592`
 * `bool` - `True`, `False`, `1`, `0`
 * `list` - `[1, 5, False, True, -23940.212, -129423, 364, -0.15246]`
-* `str` - `"Hello"`, `'a'`, `"Python loves memory"`, `"42.7837"`
+* `str` - `"Hello"`, `'a'`, `'Python loves memory'`, `"42.7837"`
 * `dict` - `{"apples": 10, "oranges": 7, "bananas": 4, "grapes": 26}`
 
 ---
@@ -256,13 +256,6 @@ print(avg_fruits)
 >>> 7.0
 ```
 
-<!-- ```py
-x = 6
-y = 2*x-3
-print(y)
->>> 9
-``` -->
-
 * PEMDAS rules apply
 
 ---
@@ -302,7 +295,8 @@ print(eggs)
 ## Comparison Operators
 
 ```py
-print(42 > 2**8)
+eggs = 6
+print(eggs > 42)
 >>> False
 ```
 
@@ -318,8 +312,9 @@ print(42 > 2**8)
 ## Logical Operators
 
 ```py
-print(42 > 2**8 or 42 < 700)
-print(not 42 >= 2**5)
+eggs = 42
+print(eggs > 2**8 or eggs < 700)
+print(not eggs >= 2**5)
 >>> True
 >>> False
 ```
@@ -364,14 +359,6 @@ for num in numbers:
 >>> 164
 >>> 178
 ```
-
-<!-- ```py
-total = 0
-for i in range(10):
-  total += i
-print(total)
->>> 45
-``` -->
 
 * `num` is the value of the object at an internally tracked index
 * `numbers` can be any iterable object (ie. `range`, `list`, etc.)
