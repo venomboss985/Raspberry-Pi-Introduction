@@ -6,12 +6,12 @@ Welcome to the *Introduction to Raspberry Pi* repository by the [Hedron Hackersp
 
 # Why did you make this?
 
-This was primarily designed to be run as an in-person or remote class, which is why some of the information on the slides is a little limited. It was more of a reminder for myself to remember what to cover and what to elaborate more on. If it were any more verbose, you might as well read the documentation or check support threads on the Raspberry Pi forums (or heaven forbid Stack Overflow). Having someone work along side you:
+This was primarily designed to be run as an in-person and/or remote class, which is why some of the information on the slides is a little limited. It was more of a reminder for myself to remember what to cover and what to elaborate more on. If it were any more verbose, you might as well read the documentation or check support threads on the Raspberry Pi forums (or heaven forbid Stack Overflow). Having someone work along side you:
 
 * Makes it much more engaging
 * Makes it easier for the material to actually stick
 * Allows for going in-depth in certain topics
-* Feel safer about doing certain things or running certain commands (like using the Terminal)
+* Feels safer about doing certain things or running certain commands (like using the Terminal)
 
 Even if you decide not to take the in-person or remote classes, you should still be able to get something out of these slides like a new reference point for troubleshooting or terminal commands.
 
@@ -20,17 +20,19 @@ Even if you decide not to take the in-person or remote classes, you should still
 Currently, there is only the getting started steps in setting up the Pi hardware, updating everything, and basic terminal usage. However, there are lots of modules that I plan on creating.
 
 Fully complete modules:
-- [x] 0. Raspberry Pi Introduction
-- [x] 1. Basic Setup
-- [ ] 2. Introduction to Python
-  - [ ] 2a. Variables, Math, Control Flow, and Functions
-  - [ ] 2b. Lists/Dicts, Files, Modules/Libraries, and OOP (objects)
-  - [ ] 2c. Using GPIO with Python
-- [ ] 3. Using git and GitHub
-- [ ] 4. Self-hosting with Docker
-- [ ] 5. More TBD...
 
-# How are the slides rendered?
+* [x] 0. Raspberry Pi Introduction
+* [x] 1. Basic Setup
+* [ ] 2. Introduction to Python
+  * [x] 2a. Variables, Math, Control Flow, and Functions
+  * [x] 2b. Lists/Dicts, Files, Modules/Libraries
+  * [ ] 2c. OOP (objects), 
+  * [ ] 2d. Using GPIO with Python
+* [ ] 3. Using git and GitHub
+* [ ] 4. Self-hosting with Docker
+* [ ] 5. More TBD...
+
+# How do you make these slides?
 
 I am using a VS Code extension called Marp which turns markdown into a slideshow presentation. Since it's all just markdown, it was really easy to just get started and learning some of the new stuff like working with images was not bad at all. There are some caveats to using Marp like using 2 columns on one slide isn't intuitive at all (have to use custom HTML and CSS, I am not a web dev), image options, and a lot of other QOL things. But with all its faults, it's much better than using some proprietary software that requires online access to use. I will probably be using the RISE plugin for Jupyter Notebooks when I make the AI/ML slides (for obvious reasons), but for pretty much everything else, this is a great extension that I highly recommend if you want a simplistic slideshow designer.
 
