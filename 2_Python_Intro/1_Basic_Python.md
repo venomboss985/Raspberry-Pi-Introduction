@@ -51,6 +51,20 @@ By: Hedron Hackerspace
 <!-- _footer: "* - At least somewhat" -->
 ---
 
+# What is Python exactly?
+
+* Popular: Learned commonly as a first programming language
+  * Used heavily in data science and automation fields
+  * Can even be used on some microcontrollers (not recommended)
+* General purpose: Can be used for a wide variety of tasks
+* High-level*: Abstracted far from machine code
+* Interpreted: Runs line by line in real time
+* Dynamically (loosely) typed: Types are implicitly set
+* Hated by everyone lol
+
+<!-- _footer: "* - Relative to other languages, especially to compiled languages" -->
+---
+
 # IDEs and editors
 
 * **IDE**: *integrated development environment*
